@@ -49,16 +49,6 @@
 		DAB8CE4224E368F200A2500E /* container-migration.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAB8CE4124E368F200A2500E /* container-migration.plist */; };
 		DAC14124232367B200FCFA30 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC14123232367B200FCFA30 /* Search.swift */; };
 		DAD0862D24545C66002AFAEC /* Storage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAB65DFB2440AD63000AECA8 /* Storage.xcdatamodeld */; };
-		DAD20C7724E55CD200E96247 /* org.sparkle-project.Downloader.xpc in Resources */ = {isa = PBXBuildFile; fileRef = DAD20C7224E55CD100E96247 /* org.sparkle-project.Downloader.xpc */; };
-		DAD20C7824E55CD200E96247 /* org.sparkle-project.InstallerStatus.xpc in Resources */ = {isa = PBXBuildFile; fileRef = DAD20C7324E55CD100E96247 /* org.sparkle-project.InstallerStatus.xpc */; };
-		DAD20C7924E55CD200E96247 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD20C7424E55CD100E96247 /* Sparkle.framework */; };
-		DAD20C7A24E55CD200E96247 /* org.sparkle-project.InstallerLauncher.xpc in Resources */ = {isa = PBXBuildFile; fileRef = DAD20C7524E55CD200E96247 /* org.sparkle-project.InstallerLauncher.xpc */; };
-		DAD20C7B24E55CD200E96247 /* org.sparkle-project.InstallerConnection.xpc in Resources */ = {isa = PBXBuildFile; fileRef = DAD20C7624E55CD200E96247 /* org.sparkle-project.InstallerConnection.xpc */; };
-		DAD20C7C24E55CEC00E96247 /* org.sparkle-project.Downloader.xpc in Embed Sparkle XPC Services */ = {isa = PBXBuildFile; fileRef = DAD20C7224E55CD100E96247 /* org.sparkle-project.Downloader.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DAD20C7D24E55CEC00E96247 /* org.sparkle-project.InstallerConnection.xpc in Embed Sparkle XPC Services */ = {isa = PBXBuildFile; fileRef = DAD20C7624E55CD200E96247 /* org.sparkle-project.InstallerConnection.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DAD20C7E24E55CEC00E96247 /* org.sparkle-project.InstallerLauncher.xpc in Embed Sparkle XPC Services */ = {isa = PBXBuildFile; fileRef = DAD20C7524E55CD200E96247 /* org.sparkle-project.InstallerLauncher.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DAD20C7F24E55CEC00E96247 /* org.sparkle-project.InstallerStatus.xpc in Embed Sparkle XPC Services */ = {isa = PBXBuildFile; fileRef = DAD20C7324E55CD100E96247 /* org.sparkle-project.InstallerStatus.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		DAD20C8024E55CF100E96247 /* Sparkle.framework in Copy Sparkle */ = {isa = PBXBuildFile; fileRef = DAD20C7424E55CD100E96247 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DAE28500232257D20080E394 /* ColorImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE284FF232257D20080E394 /* ColorImage.swift */; };
 		DAE2850223225BD90080E394 /* ColorImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE2850123225BD90080E394 /* ColorImageTests.swift */; };
 		DAEE38471E3DBEB100DD2966 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEE38461E3DBEB100DD2966 /* AppDelegate.swift */; };
@@ -86,34 +76,6 @@
 			remoteInfo = Maccy;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		DAA8D3D524E44F2E00A08026 /* Embed Sparkle XPC Services */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
-			dstSubfolderSpec = 16;
-			files = (
-				DAD20C7C24E55CEC00E96247 /* org.sparkle-project.Downloader.xpc in Embed Sparkle XPC Services */,
-				DAD20C7D24E55CEC00E96247 /* org.sparkle-project.InstallerConnection.xpc in Embed Sparkle XPC Services */,
-				DAD20C7E24E55CEC00E96247 /* org.sparkle-project.InstallerLauncher.xpc in Embed Sparkle XPC Services */,
-				DAD20C7F24E55CEC00E96247 /* org.sparkle-project.InstallerStatus.xpc in Embed Sparkle XPC Services */,
-			);
-			name = "Embed Sparkle XPC Services";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DAE61DA01EDC4A5E0016A3DE /* Copy Sparkle */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				DAD20C8024E55CF100E96247 /* Sparkle.framework in Copy Sparkle */,
-			);
-			name = "Copy Sparkle";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0609BCB5A36EB4079FABECC5 /* Pods-Maccy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maccy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Maccy/Pods-Maccy.release.xcconfig"; sourceTree = "<group>"; };
@@ -221,7 +183,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA5F46512020E9FB00425C11 /* Carbon.framework in Frameworks */,
-				DAD20C7924E55CD200E96247 /* Sparkle.framework in Frameworks */,
 				2B63F3A3615AE0AF9FB59464 /* Pods_Maccy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,8 +382,6 @@
 				DAEE383F1E3DBEB100DD2966 /* Sources */,
 				DAEE38401E3DBEB100DD2966 /* Frameworks */,
 				DAEE38411E3DBEB100DD2966 /* Resources */,
-				DAE61DA01EDC4A5E0016A3DE /* Copy Sparkle */,
-				DAA8D3D524E44F2E00A08026 /* Embed Sparkle XPC Services */,
 				8AE38A873EFDB3F38D55B774 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -509,12 +468,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAD20C7B24E55CD200E96247 /* org.sparkle-project.InstallerConnection.xpc in Resources */,
-				DAD20C7724E55CD200E96247 /* org.sparkle-project.Downloader.xpc in Resources */,
-				DAD20C7824E55CD200E96247 /* org.sparkle-project.InstallerStatus.xpc in Resources */,
 				DA05E7CC2483EF83005CB8AA /* GeneralPreferenceViewController.xib in Resources */,
 				DAB8CE4224E368F200A2500E /* container-migration.plist in Resources */,
-				DAD20C7A24E55CD200E96247 /* org.sparkle-project.InstallerLauncher.xpc in Resources */,
 				DA6373981E4AB9BB00263391 /* Assets.xcassets in Resources */,
 				4762D6972467226100B3A2BA /* Localizable.strings in Resources */,
 				DA05E7D22483F70B005CB8AA /* AppearancePreferenceViewController.xib in Resources */,
